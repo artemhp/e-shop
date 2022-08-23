@@ -1,5 +1,4 @@
 import React from 'react';
-import PropTypes from 'prop-types';
 import styles from './Details.module.css';
 import { useParams } from 'react-router-dom';
 import { useQuery } from 'react-query';
@@ -17,6 +16,7 @@ const Details = () => {
         .then((data) => data.list)
         .then((item) => {
           return item.find((el) => {
+            // eslint-disable-next-line eqeqeq
             return el.id == id;
           });
         }),
