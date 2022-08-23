@@ -32,7 +32,7 @@ function App() {
           <Routes>
             <Route exact path="/" element={<Main />}></Route>
             <Route path="/list" element={<List />}></Route>
-            <Route path="/details" element={<Details />}></Route>
+            <Route path="/details/:id" element={<Details />}></Route>
             <Route path="/cart" element={<Cart />}></Route>
           </Routes>
         </BrowserRouter>

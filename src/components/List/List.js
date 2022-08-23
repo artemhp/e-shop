@@ -5,7 +5,7 @@ import ItemList from '../ItemsList/ItemsList';
 
 const List = () => {
   return (
-    <div>
+    <div className="d-flex" style={{ gap: '15px' }}>
       <ItemList />
     </div>
   );

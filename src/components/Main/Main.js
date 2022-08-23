@@ -6,6 +6,7 @@ import { useQuery } from 'react-query';
 import Card from 'react-bootstrap/Card';
 import Button from 'react-bootstrap/Button';
 import Ratio from 'react-bootstrap/Ratio';
+import ItemList from '../ItemsList/ItemsList';
 
 const Main = () => {
   const { data, isLoading, isError } = useQuery('listMain', () => {
@@ -30,20 +31,7 @@ const Main = () => {
         <SimpleImageSlider width={936} height={504} images={images} showBullets={true} showNavs={true} />
       </div>
       <div className="d-flex" style={{ gap: '15px' }}>
-        {data.map((item) => {
-          return (
-            <Card key={item.id} style={{ width: '18rem' }}>
-              <Ratio aspectRatio="16x9">
-                <Card.Img variant="top" src={item.image} />
-              </Ratio>
-              <Card.Body>
-                <Card.Title>{item.title}</Card.Title>
-                <Card.Text>{item.description.slice(0, 50)}...</Card.Text>
-                <Button variant="primary">Details</Button>
-              </Card.Body>
-            </Card>
-          );
-        })}
+        <ItemList />
       </div>
     </div>
   );
