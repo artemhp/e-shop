@@ -24,6 +24,14 @@ const students = {
       description:
         'Its sometimes her behaviour are contented. Do listening am eagerness oh objection collected. Together gay feelings continue juvenile had off one. Unknown may service subject her letters one bed. Child years noise ye in forty. Loud in this in both hold. My entrance me is disposal bachelor remember relation.',
     },
+    {
+      id: '4',
+      image: '/images/4.jpg',
+      title: 'Sofa',
+      price: 200,
+      description:
+        'Its sometimes her behaviour are contented. Do listening am eagerness oh objection collected. Together gay feelings continue juvenile had off one. Unknown may service subject her letters one bed. Child years noise ye in forty. Loud in this in both hold. My entrance me is disposal bachelor remember relation.',
+    },
   ],
 };
 const handler = async ({ httpMethod }) => {
