@@ -10,6 +10,7 @@ export default (state = INITIAL_STATE, action = {}) => {
       id: action.payload.id,
       title: action.payload.title,
       description: action.payload.description,
+      price: action.payload.price,
     });
     return { cart: cart };
   }
